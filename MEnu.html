@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esoft Restaurant - Menu</title>
+    <style>
+        body {
+            background-image: url('rest1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px 0;
+            background: rgba(0, 0, 255, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul li {
+            margin: 0 12px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+            padding: 10px 16px;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background: white;
+            color: blue;
+        }
+
+        .menu-section {
+            background: rgba(255, 255, 255, 0.9);
+            margin: 60px auto;
+            max-width: 1100px;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-section h1 {
+            text-align: center;
+            color: blue;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .menu-category {
+            margin-bottom: 40px;
+        }
+
+        .menu-category h2 {
+            color: blue;
+            border-bottom: 3px solid blue;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 255, 0.2);
+        }
+
+        .menu-item h3 {
+            color: blue;
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            margin: 0;
+            color: #333;
+        }
+
+        .price {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="Order.html">Order</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-section">
+        <h1>Our Delicious Menu 🍽️</h1>
+
+        <div class="menu-category">
+            <h2>Starters</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Chicken Soup</h3>
+                    <p>Warm and flavorful chicken broth with herbs.</p>
+                    <div class="price">Rs. 450</div>
+                </div>
+                <div class="menu-item">
+                    <h3>Veg Spring Rolls</h3>
+                    <p>Crispy rolls filled with mixed veggies.</p>
+                    <div class="price">Rs. 400</div>
+                </div>
+                <div class="menu-item">
+                    <h3>Garlic Bread</h3>
+                    <p>Soft bread topped with garlic butter.</p>
+                    <div class="price">Rs. 350</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>Main Course</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Chicken Fried Rice</h3>
+                    <p>Classic fried rice with juicy chicken and veggies.</p>
+                    <div class="price">Rs. 850</div>
+                </div>
+                <div class="menu-item">
+                    <h3>Vegetable Noodles</h3>
+                    <p>Stir-fried noodles with colorful vegetables.</p>
+                    <div class="price">Rs. 700</div>
+                </div>
+                <div class="menu-item">
+                    <h3>Grilled Fish</h3>
+                    <p>Fresh fish grilled to perfection with lemon sauce.</p>
+                    <div class="price">Rs. 1200</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>Desserts</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Chocolate Cake</h3>
+                    <p>Moist chocolate sponge with creamy frosting.</p>
+                    <div class="price">Rs. 550</div>
+                </div>
+                <div class="menu-item">
+                    <h3>Fruit Salad</h3>
+                    <p>Fresh seasonal fruits with honey dressing.</p>
+                    <div class="price">Rs. 400</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>Drinks</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Fresh Lime Juice</h3>
+                    <p>Refreshing lime juice with a hint of mint.</p>
+                    <div class="price">Rs. 250</div>
+                </div>
+                <div class="menu-item">
+                    <h3>Cold Coffee</h3>
+                    <p>Chilled creamy coffee topped with ice cream.</p>
+                    <div class="price">Rs. 300</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

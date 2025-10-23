@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Esoft Restaurent]</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-image: url('rest1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      font-family: "Roboto", 'Times New Roman', Times, serif;
+      color: #222;
+    }
+
+    /* ===== Navigation Bar ===== */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 20px 0;
+      background: rgba(0, 0, 255, 0.8); /* blue transparent bg */
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul li {
+      margin: 0 12px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 22px;
+      padding: 10px 16px;
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+      background: white;
+      color: blue;
+    }
+
+    /* ===== About Section ===== */
+    .about-section {
+      background: rgba(255, 255, 255, 0.9);
+      margin: 60px auto;
+      max-width: 900px;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-section h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: blue;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    /* ===== Customer Reviews ===== */
+    .reviews {
+      margin-top: 40px;
+    }
+
+    .reviews h2 {
+      text-align: center;
+      color: blue;
+      margin-bottom: 20px;
+    }
+
+    .review {
+      background: #f9f9f9;
+      border-left: 5px solid blue;
+      margin: 20px 0;
+      padding: 16px;
+      font-style: italic;
+      border-radius: 6px;
+    }
+
+    .review p:last-child {
+      text-align: right;
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: blue;
+      color: white;
+      border-top: 3px solid white;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        margin: 30px 15px;
+        padding: 25px;
+      }
+
+      nav ul li a {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== Navigation Bar ===== -->
+  <nav>
+    <ul>
+      <li><a href="About Us.html" style="background:white; color:blue;">About Us</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="Menu.html">Menu</a></li>
+      <li><a href="Contacts.html">Contacts</a></li>
+      <li><a href="Order.html">Order</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== About Section ===== -->
+  <div class="about-section">
+    <h1>About Esoft Restaurent</h1>
+    <p>
+      Welcome to <strong>Esoft Restaurant</strong>, where passion meets flavor! We are dedicated to bringing you the
+      freshest, locally-sourced ingredients and authentic [Cuisine Type] dishes made with love and creativity.
+    </p>
+    <p>
+      Our mission is to create a warm and inviting atmosphere where family and friends can come together to enjoy great
+      food and even greater memories. Every dish we serve reflects our commitment to quality, sustainability, and
+      genuine hospitality.
+    </p>
+    <p>
+      Whether you're stopping by for a quick meal or celebrating a special occasion, we promise an unforgettable dining
+      experience that will keep you coming back for more!
+    </p>
+
+    <!-- ===== Customer Reviews ===== -->
+    <div class="reviews">
+      <h2>What Our Customers Say</h2>
+
+      <div class="review">
+        <p>
+          "Absolutely the best [Cuisine Type] restaurant in town! The staff is friendly, and the food tastes just like
+          home. Highly recommended!"
+        </p>
+        <p>- [Customer Name]</p>
+      </div>
+
+      <div class="review">
+        <p>
+          "A perfect mix of great ambiance, delicious food, and excellent service. We'll definitely be returning soon!"
+        </p>
+        <p>- [Customer Name]</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 [Restaurant Name]. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

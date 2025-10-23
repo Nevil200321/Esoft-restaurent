@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esoft Restaurant - Contact Us</title>
+  <style>
+    body {
+      background-image: url('rest1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 20px 0;
+      background: rgba(0, 0, 255, 0.8);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul li {
+      margin: 0 12px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 22px;
+      padding: 10px 16px;
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+      background: white;
+      color: blue;
+    }
+
+    .contact-section {
+      background: rgba(255, 255, 255, 0.9);
+      margin: 60px auto;
+      max-width: 1000px;
+      padding: 50px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-section h1 {
+      text-align: center;
+      color: blue;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-section p {
+      text-align: center;
+      color: #333;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .contact-info {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info h2 {
+      color: blue;
+      margin-bottom: 15px;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      resize: none;
+      outline: none;
+    }
+
+    input:focus, textarea:focus {
+      border-color: blue;
+      box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+    }
+
+    button {
+      background: blue;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: darkblue;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: blue;
+      font-size: 1.3rem;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: darkblue;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="About Us.html">About Us</a></li>
+      <li><a href="Menu.html">Menu</a></li>
+      <li><a href="Location.html">Location</a></li>
+      <li><a href="Contacts.html">Contacts</a></li>
+      <li><a href="Order.html">Order</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-section">
+    <h1>Contact Us 📞</h1>
+    <p>Have a question, feedback, or want to make a reservation? We'd love to hear from you!</p>
+
+    <div class="contact-container">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><strong>Address:</strong> 123 Main Street, Colombo, Sri Lanka</p>
+        <p><strong>Phone:</strong> +94 77 123 4567</p>
+        <p><strong>Email:</strong> esoftrestaurant@gmail.com</p>
+        <p><strong>Opening Hours:</strong><br>Monday - Sunday: 10:00 AM – 11:00 PM</p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <h3>Follow Us</h3>
+      <a href="#">🌐 Facebook</a>
+      <a href="#">📸 Instagram</a>
+      <a href="#">🐦 Twitter</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
